@@ -227,8 +227,7 @@ bool error(){
     return false;
 }
 
-bool isoper(char car)
-{
+bool isoper(char car){
     if (car == '+' || car == '-' || car == '*' || car == '/' || car == '^' || car == '#')
     {
         return true;
@@ -347,8 +346,7 @@ double evaluar(){
     }
 }
 
-bool isvar(string var)
-{
+bool isvar(string var){
     for (int i = 0; i < var.size(); i++)
     {
         if ((var[i] < 91 && var[i] > 65) || (var[i] < 123 && var[i] > 96)){}
